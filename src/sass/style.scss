@@ -1,0 +1,8 @@
+//libs
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/fontello.css";
+//base
+@use "/src/sass/base/variables.scss";
+@use "/src/sass/base/basic_style.css";
+//blocks
+@use "/src/sass/blocks/homepage/hero.scss";
