@@ -1,0 +1,6 @@
+@use "/src/sass/base/mixins.scss" as *;
+
+.btn-default {
+    transition: 0.3s;
+    @include btn-default;
+}

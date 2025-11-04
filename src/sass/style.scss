@@ -3,6 +3,10 @@
 @use "/src/sass/libs/fontello.css";
 //base
 @use "/src/sass/base/variables.scss";
-@use "/src/sass/base/basic_style.css";
+@use "/src/sass/base/basic_style.scss";
+// @use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/blocks/homepage/header.scss";
+@use "/src/sass/ui/titles.scss";
+@use "/src/sass/ui/buttons.scss";
 //blocks
-@use "/src/sass/blocks/homepage/hero.scss";
+@use "/src/sass/blocks/homepage/promo.scss";
