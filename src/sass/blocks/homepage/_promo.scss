@@ -1,4 +1,8 @@
+@use "/src/sass/base/mixins" as *;
 .promo {
+    &__potter {
+        display: none;
+    }
     position: relative;
     padding-top: 50px;
     &__wrapper {
@@ -40,6 +44,54 @@
             padding-top: 250px;
             padding-left: 71px;
             text-align: left;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .promo {
+        &__potter {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: clamp(450px, 37.5vw, 640px);
+            height: 633px;
+            object-fit: cover;
+        }
+        &__wrapper {
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        &__title {
+            padding-left: 0;
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .promo {
+        padding-top: 40px;
+        &__potter {
+            width: 640px;
+            height: 900px;
+        }
+        &__wrapper {
+            gap: 30px;
+            margin-top: 79px;
+        }
+        &__title {
+            padding-top: 384px;
+            font-size: 32px;
+            // padding-left: 642px;
+        }
+        &__img {
+            width: 330px;
+            height: 460px;
+        }
+        &__btn {
+            // @include btn-default;
+            margin-top: 50px;
+            width: 330px;
+            height: 60px;
         }
     }
 }
