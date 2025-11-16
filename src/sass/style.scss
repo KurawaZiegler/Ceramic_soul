@@ -1,6 +1,9 @@
 //libs
 @use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/grids-min.css";
+@use "/src/sass/libs/grids-responsive-min.css";
 @use "/src/sass/libs/fontello.css";
+
 //base
 @use "/src/sass/base/variables.scss";
 @use "/src/sass/base/basic_style.scss";
@@ -12,3 +15,4 @@
 //blocks
 @use "/src/sass/blocks/homepage/promo.scss";
 @use "/src/sass/blocks/homepage/activities.scss";
+@use "/src/sass/blocks/homepage/git.scss";

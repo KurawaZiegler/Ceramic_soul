@@ -10,7 +10,7 @@
         box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
     }
     &__text {
-        margin-top: 20px;
+        margin-block-start: 20px;
         font-weight: 400;
         font-size: 16px;
         color: var(--dark-color);
@@ -21,30 +21,45 @@
 }
 @media screen and (min-width: 768px) {
     .activities {
-        padding: 60px 95px;
+        padding: 60px 95px 0 95px;
         &__wrapper {
             margin-top: 40px;
         }
         &__text {
-            margin-top: 25px;
+            margin-block-start: 25px;
             font-size: 20px;
         }
     }
 }
 @media screen and (min-width: 1200px) {
     .activities {
-        padding: 60px 10px 0px 10px;
+        padding: 60px 0 0 0;
         &__wrapper {
             margin-top: 80px;
             gap: 0px;
+        }
+        &__col {
+            padding: 0 10px;
         }
         &__img {
             margin-top: 60px;
             height: 320px;
         }
         &__text {
-            margin-top: 25px;
-            font-size: 20px;
+            &_fixed {
+                inline-size: 556px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .activities {
+        padding: 100px 0 0 0;
+        &__wrapper {
+            margin-top: 80px;
+        }
+        &__text {
+            margin-block-start: 30px;
         }
     }
 }

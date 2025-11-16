@@ -1,0 +1,65 @@
+.git {
+    padding-top: 60px;
+    &__wrapper {
+        margin-top: 60px;
+    }
+    &__img {
+        display: none;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+    &__form {
+        height: 428px;
+    }
+    &__vase {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .git {
+        &__col {
+        }
+        &__form {
+            width: 300px;
+            padding-left: 24px;
+        }
+        &__vase {
+            display: block;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .git {
+        &__wrapper {
+            margin-top: 80px;
+        }
+        &__img {
+            display: block;
+        }
+        &__col {
+        }
+        &__form {
+            padding-left: 40px;
+        }
+        &__vase {
+            display: block;
+            right: 24px;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .git {
+        padding-top: 100px;
+        &__form {
+            padding-left: 147px;
+            height: 356px;
+        }
+        &__img {
+            height: 356px;
+        }
+    }
+}
