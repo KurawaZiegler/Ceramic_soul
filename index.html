@@ -113,17 +113,23 @@
 						<fieldset class="git__fieldset">
 							<div class="git__input-block">
 								<label for="name" class="git__label">Name</label>
-								<input type="text" id="name" name="name" placeholder="Name" class="git__input" />
+								<input type="text" id="name" name="name" placeholder="Name" class="git__input"
+									required />
 							</div>
 							<div class="git__input-block">
 								<label for="email" class="git__label">Email</label>
-								<input type="text" id="email" name="email" placeholder="Email" class="git__input" />
+								<input type="text" id="email" name="email" placeholder="Email" class="git__input"
+									required />
 							</div>
 						</fieldset>
-						<fieldset class="git__fieldset">
-							<label for="question">Your question</label>
-							<textarea name="question" id="question" placeholder="Your question"></textarea>
-						</fieldset>
+						<label for="question" class="git__label">Your question</label>
+						<textarea name="question" id="question" placeholder="Your question" class="git__textarea"
+							required></textarea>
+						<label for="checkbox" class="git__label git__check-block">
+							<input type="checkbox" id="checkbox" class="git__checkbox" required>
+							I agree with the <a href="#">terms</a>
+						</label>
+						<button class="btn-send git__btn">send request</button>
 					</form>
 
 				</div>
