@@ -7,9 +7,6 @@
         display: none;
         box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
     }
-    &__form {
-        height: 428px;
-    }
     &__vase {
         display: none;
     }
@@ -83,8 +80,8 @@
         &__col {
         }
         &__form {
-            // width: 300px;
-            padding-left: 24px;
+            width: 300px;
+            margin-left: 24px;
         }
         &__vase {
             display: block;
@@ -101,11 +98,14 @@
         }
         &__img {
             display: block;
+            width: 550px;
+            height: 341px;
+            object-fit: cover;
         }
         &__col {
         }
         &__form {
-            padding-left: 40px;
+            margin-left: 40px;
         }
         &__input {
             &:hover {
@@ -131,8 +131,21 @@
     .git {
         padding-top: 100px;
         &__form {
-            padding-left: 147px;
-            height: 356px;
+            width: 100%;
+            margin-left: 147px;
+        }
+        &__fieldset {
+            display: flex;
+            gap: 45px;
+        }
+        &__input-block {
+            width: 300px;
+        }
+        &__label {
+            width: 300px;
+        }
+        &__textarea {
+            width: 300px;
         }
         &__img {
             height: 356px;
