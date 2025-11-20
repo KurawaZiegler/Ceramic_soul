@@ -1,19 +1,99 @@
 .works {
     padding-top: 60px;
+    padding-bottom: 105px;
     &__slider {
         margin-top: 40px;
-        padding-bottom: 45px;
-    }
-    .swiper-slide {
-        img {
-            width: 100%;
+        // padding-bottom: 45px;
+        &-nav {
+            display: none;
         }
     }
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: none;
+    .swiper-slide img {
+        width: 100%;
     }
     .swiper-pagination {
-        bottom: 0;
+        bottom: -45px;
+    }
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 0;
+        background-color: var(--dark-color);
+        opacity: 1;
+        -webkit-tap-highlight-color: transparent;
+        &-active {
+            background-color: var(--ceramic-color);
+        }
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-horizontal.swiper-pagination-bullets {
+        .swiper-pagination-bullet {
+            margin: 0 6px;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .works {
+        &__slider {
+            margin-top: 45px;
+        }
+        .swiper-slide img {
+            margin: 0 auto;
+            width: 400px;
+            object-fit: cover;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .works {
+        &__wrapper {
+            position: relative;
+        }
+        .swiper-slide img {
+            width: 100%;
+        }
+        &__slider {
+            margin: 80px 40px 0px 40px;
+            // padding-bottom: 40px;
+            &-nav {
+                position: absolute;
+                top: 50%;
+                transform: translatey(-50%);
+                display: block;
+                font-size: 21px;
+
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                &::before {
+                    width: auto;
+                    margin: 0;
+                }
+            }
+        }
+        .icon-left-open {
+            left: 16px;
+        }
+        .icon-right-open {
+            right: 16px;
+        }
+        .swiper-pagination {
+            bottom: -40px;
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .works {
+        padding-top: 100px;
+        padding-bottom: 140px;
+        &__slider {
+            margin: 80px 85px 0px 85px;
+        }
+        .icon-left-open {
+            left: 30px;
+        }
+        .icon-right-open {
+            right: 30px;
+        }
     }
 }

@@ -18,8 +18,8 @@ try {
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.icon-right-open',
+            prevEl: '.icon-left-open',
         },
         breakpoints: {
             1200: {
