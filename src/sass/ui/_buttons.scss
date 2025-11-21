@@ -76,3 +76,25 @@
         }
     }
 }
+.btn-submit {
+    border: 1px solid var(--light-color);
+    border-radius: 2px;
+    width: 90px;
+    // height: 40px;
+    background-color: transparent;
+
+    padding-block: 11px;
+    padding-inline: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--light-color);
+    transition: 0.3s;
+    // @include btn-send;
+    &:disabled {
+        border: 1px solid var(--ui-disabled-color);
+        color: var(--ui-disabled-color);
+        cursor: not-allowed;
+    }
+}

@@ -13,6 +13,12 @@
     @include title;
     font-size: 20px;
 }
+.title-h4 {
+    @include title;
+    font-size: 16px;
+    color: var(--light-color);
+    text-align: left;
+}
 @media screen and (min-width: 768px) {
     .title-h2 {
         font-size: 36px;

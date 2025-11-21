@@ -70,6 +70,7 @@
         margin-right: 15px;
         width: 15px;
         height: 15px;
+        cursor: pointer;
     }
     &__btn {
         margin-top: 20px;
@@ -77,8 +78,6 @@
 }
 @media screen and (min-width: 768px) {
     .git {
-        &__col {
-        }
         &__form {
             width: 300px;
             margin-left: 24px;
@@ -101,8 +100,6 @@
             width: 550px;
             height: 341px;
             object-fit: cover;
-        }
-        &__col {
         }
         &__form {
             margin-left: 40px;

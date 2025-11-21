@@ -1,0 +1,168 @@
+.footer {
+    padding: 50px 0;
+    background-color: var(--dark-color);
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__news {
+        display: flex;
+        flex-direction: column;
+        &-text {
+            margin-top: 40px;
+            font-size: 16px;
+            color: var(--light-color);
+        }
+    }
+    &__form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        padding: 0 15px 15px 0;
+        width: 293px;
+        background-color: transparent;
+        color: var(--ui-active-color);
+        border: none;
+        border-bottom: 1px solid var(--ui-active-color);
+        &::placeholder {
+            color: var(--ui-active-color);
+            font-size: 14px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__check-block {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 200%;
+        color: var(--light-color);
+        a {
+            margin-left: 4px;
+            color: #a22dc6;
+        }
+    }
+    &__checkbox {
+        margin-right: 15px;
+        width: 15px;
+        height: 15px;
+    }
+    // [type="checkbox"] {
+    //     -webkit-appearance: none;
+    //     border: 1px solid var(--light-color);
+    //     border-radius: 2px;
+    //     background-color: transparent;
+    //     cursor: pointer;
+    //     &::before {
+    //         content: "";
+    //         color: transparent;
+    //         display: block;
+    //         width: inherit;
+    //         height: inherit;
+    //         border-radius: inherit;
+    //         border: 0;
+    //         background-color: transparent;
+    //         background-size: contain;
+    //     }
+    //     &:checked {
+    //         // background-color: currentcolor;
+    //         &::before {
+    //             box-shadow: none;
+    //             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+    //         }
+    //     }
+    // }
+    &__form-btn {
+        margin-top: 20px;
+    }
+    &__nav {
+        // margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        &-block {
+            &:first-child {
+                margin-right: 18px;
+            }
+        }
+        &-list {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-liks {
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--light-color);
+        }
+    }
+    &__social {
+        &-list {
+            margin-top: 40px;
+            display: flex;
+            gap: 10px;
+        }
+        &-links {
+            font-size: 24px;
+            color: var(--light-color);
+        }
+    }
+    &__content_division {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .copyright {
+        margin-top: 40px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--light-color);
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        &__content_division {
+            gap: 0px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__nav {
+            // margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 66px;
+            &-block {
+                &:first-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer {
+        &__wrapper {
+            flex-direction: row;
+            gap: 0px;
+            justify-content: space-between;
+        }
+
+        &__content_division {
+            width: 60%;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer {
+        &__content_division {
+            width: 58%;
+        }
+    }
+}
