@@ -34,5 +34,19 @@ try {
     });
 } catch (e) { }
 
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.header__menu');
+let menuClose = document.querySelector('.header__menu-close');
+let noScrollBody = document.querySelector('body')
+
+burger.addEventListener('click', function () {
+    menu.classList.add('header__menu-active')
+    noScrollBody.classList.add('no-scroll')
+})
+menuClose.addEventListener('click', function () {
+    menu.classList.remove('header__menu-active')
+    noScrollBody.classList.remove('no-scroll')
+})
+
 
 

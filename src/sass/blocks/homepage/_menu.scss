@@ -2,15 +2,21 @@
     &__menu {
         display: block;
         position: absolute;
-        padding: 50px 24px;
+        padding: 0 24px;
         top: 0;
+        // transform: translateX(-100%);
         left: -100%;
+
         width: 100vw;
         height: 100vh;
         background-color: var(--light-color);
 
         transition: 0.3s;
         z-index: 99;
+        &-active {
+            transform: translateX(100%);
+            // left: 0;
+        }
         &-list {
             margin-top: 50px;
             li {
@@ -46,6 +52,13 @@
                     transform: rotate(-45deg);
                 }
             }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .header {
+        &__menu {
+            display: none;
         }
     }
 }
