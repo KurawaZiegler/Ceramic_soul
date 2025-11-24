@@ -37,16 +37,44 @@ try {
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__menu');
 let menuClose = document.querySelector('.header__menu-close');
-let noScrollBody = document.querySelector('body')
+// let noScrollBody = document.querySelector('body')
+let currentWidth = window.innerWidth;
 
-burger.addEventListener('click', function () {
-    menu.classList.add('header__menu-active')
-    noScrollBody.classList.add('no-scroll')
-})
-menuClose.addEventListener('click', function () {
-    menu.classList.remove('header__menu-active')
-    noScrollBody.classList.remove('no-scroll')
-})
+// function burgerFunction() {
+//     burger.addEventListener('click', function () {
+//         menu.classList.add('header__menu-active')
+//         noScrollBody.classList.add('no-scroll')
+//     })
+//     menuClose.addEventListener('click', function () {
+//         menu.classList.remove('header__menu-active')
+//         noScrollBody.classList.remove('no-scroll')
+//     })
+//     window.addEventListener('resize', function () {
+//         if (currentWidth > 768) {
+//             menu.classList.remove('header__menu-active')
+//             noScrollBody.classList.remove('no-scroll')
+//         };
+//     });
+// };
+// burgerFunction();
+function burgerFunction() {
+    burger.addEventListener('click', function () {
+        menu.classList.add('header__menu-active')
+        document.body.style.overflow = 'hidden';
+    })
+    menuClose.addEventListener('click', function () {
+        menu.classList.remove('header__menu-active')
+        document.body.style.overflow = 'visible';
+    })
+    window.addEventListener('resize', function () {
+        if (currentWidth > 768) {
+            menu.classList.remove('header__menu-active')
+            document.body.style.overflow = 'visible';
+        };
+    });
+};
+burgerFunction();
+
 
 
 

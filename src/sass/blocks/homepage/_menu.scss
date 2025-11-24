@@ -2,8 +2,8 @@
     &__menu {
         display: block;
         position: absolute;
-        padding: 0 24px;
-        top: 0;
+        padding: 50px 24px;
+        top: -50px;
         // transform: translateX(-100%);
         left: -100%;
 
@@ -38,8 +38,8 @@
             display: block;
             position: absolute;
             // margin-top: 50px;
-            width: 14px;
-            // height: 14px;
+            width: 20px;
+            height: 20px;
             // top: 50px;
             left: 10px;
             span {
@@ -47,9 +47,9 @@
                 width: 20px;
                 height: 1px;
                 background-color: var(--dark-color);
-                transform: rotate(45deg);
+                transform: translateY(8px) rotate(45deg);
                 &:last-child {
-                    transform: rotate(-45deg);
+                    transform: translateY(8px) rotate(-45deg);
                 }
             }
         }
