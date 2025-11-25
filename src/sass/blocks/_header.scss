@@ -1,3 +1,5 @@
+@use "/src/sass/base/mixins.scss" as *;
+
 .header {
     // position: relative;
     &__top {
@@ -62,6 +64,17 @@
     }
     .burger {
         visibility: hidden;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header {
+        &__nav {
+            &-link {
+                position: relative;
+                transition: all 0.3s;
+                @include link-hover;
+            }
+        }
     }
 }
 @media screen and (min-width: 1920px) {

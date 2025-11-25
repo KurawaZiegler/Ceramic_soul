@@ -60,3 +60,36 @@
         cursor: not-allowed;
     }
 }
+@mixin link-hover {
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0%;
+        right: 50%;
+        height: 2px;
+        bottom: -2px;
+        background-color: var(--dark-color);
+        transition: all ease-in 0.3s;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0%;
+        height: 2px;
+        left: 50%;
+        bottom: -2px;
+        background-color: var(--dark-color);
+        transition: all ease-in 0.3s;
+    }
+
+    &:hover {
+        &::after {
+            width: 50%;
+        }
+        &::before {
+            width: 50%;
+        }
+    }
+}

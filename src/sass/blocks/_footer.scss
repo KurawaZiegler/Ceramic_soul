@@ -1,3 +1,4 @@
+@use "/src/sass/base/mixins.scss" as *;
 .footer {
     padding: 50px 0;
     background-color: var(--dark-color);
@@ -163,6 +164,16 @@
     .footer {
         &__content_division {
             width: 58%;
+        }
+        &__nav {
+            &-liks {
+                position: relative;
+                @include link-hover;
+                &::before,
+                &::after {
+                    background-color: var(--light-color);
+                }
+            }
         }
     }
 }
