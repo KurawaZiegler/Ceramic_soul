@@ -76,5 +76,23 @@ function burgerFunction() {
 burgerFunction();
 
 
+try {
+    const tabs = document.querySelectorAll(".catalog__tab");
+    const contents = document.querySelectorAll(".catalog__content-item");
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+
+            tabs.forEach((t) => t.removeAttribute("id"));
+            contents.forEach((c) => (c.style.display = "none"));
+
+            tab.id = "catalog__tab-active";
+            contents[index].style.display = "block";
+        });
+    });
+
+    contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+} catch (e) { }
+
 
 
