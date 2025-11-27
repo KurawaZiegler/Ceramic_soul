@@ -19,6 +19,13 @@
     color: var(--light-color);
     text-align: left;
 }
+.title-h5 {
+    @include title;
+    font-size: 16px;
+    color: var(--dark-color);
+    text-transform: none;
+    text-align: left;
+}
 @media screen and (min-width: 768px) {
     .title-h2 {
         font-size: 36px;

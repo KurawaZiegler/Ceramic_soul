@@ -91,7 +91,7 @@ try {
         });
     });
 
-    contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+    contents.forEach((c, i) => (c.style.display = i === 0 ? "grid" : "none"));
 } catch (e) { }
 
 
