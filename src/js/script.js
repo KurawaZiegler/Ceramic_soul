@@ -87,7 +87,7 @@ try {
             contents.forEach((c) => (c.style.display = "none"));
 
             tab.id = "catalog__tab-active";
-            contents[index].style.display = "block";
+            contents[index].style.display = "grid";
         });
     });
 
