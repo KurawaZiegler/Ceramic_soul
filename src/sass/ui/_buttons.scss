@@ -98,3 +98,34 @@
         cursor: not-allowed;
     }
 }
+.btn-cta {
+    border: 1px solid var(--dark-color);
+    border-radius: 2px;
+    width: 145px;
+    background-color: transparent;
+
+    padding-block: 8px;
+    padding-inline: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    transition: 0.3s;
+}
+@media screen and (min-width: 1200px) {
+    .btn-cta {
+        &:hover {
+            border: 1px solid var(--ceramic-color);
+            color: var(--ceramic-color);
+        }
+        &:focus {
+            color: var(--dark-color);
+            outline: 1px solid var(--ceramic-color);
+            border: none;
+        }
+        &:active {
+            border: 1px solid var(--ceramic-color);
+        }
+    }
+}
