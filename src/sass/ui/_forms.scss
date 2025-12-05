@@ -1,0 +1,32 @@
+.git {
+    .just-validate-error-field {
+        border: 1px solid var(--ui-error-color);
+        outline: none;
+        &:hover {
+            border: 1px solid var(--ui-error-color);
+        }
+    }
+    .just-validate-error-label {
+        color: var(--ui-error-color);
+
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+.footer {
+    .just-validate-error-field {
+        border-bottom: 1px solid var(--ui-error-color);
+        outline: none;
+        &::placeholder {
+            color: var(--ui-error-color);
+        }
+    }
+    .just-validate-error-label {
+        font-size: 14px;
+        margin-top: 5px;
+        color: var(--ui-error-color);
+        &:target {
+            color: green;
+        }
+    }
+}
