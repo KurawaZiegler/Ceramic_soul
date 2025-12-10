@@ -2,9 +2,13 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import JustValidate, { Rules } from 'just-validate';
 
+
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'animate.css';
+
 
 import "/src/sass/style.scss";
 
@@ -163,6 +167,21 @@ try {
             }
         }
         )
+        .onSuccess((event) => {
+            const form = event.currentTarget;
+            const formData = new FormData(form);
+
+            fetch('https://httpbin.org/post', {
+                method: 'POST',
+                body: formData,
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log('Success', data);
+                    form.reset();
+                })
+        });
+
 } catch (e) { }
 
 try {
@@ -199,10 +218,29 @@ try {
         }
         )
 } catch (e) { }
+try {
+    function animations() {
+        window.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY;
+            const screenWidth = window.screen.width;
+            console.log(scrollPosition);
+            if (screenWidth >= 1200) {
+                if (scrollPosition >= 900) {
+                    document.querySelector('.git__img').classList.add('animate__slideInLeft', 'animate__animated')
+                    document.querySelector('.git__form').classList.add('animate__slideInRight', 'animate__animated')
+                    document.querySelector('.git__vase').classList.add('animate__slideInRight', 'animate__animated')
+                }
+                if (scrollPosition >= 200) {
+                    document.querySelector('.animate__about-right-1').classList.add('animate__slideInRight', 'animate__animated')
+                    document.querySelector('.animate__about-right-2').classList.add('animate__slideInRight', 'animate__animated')
+                    document.querySelector('.animate__about-left').classList.add('animate__slideInLeft', 'animate__animated')
+                }
+            }
+        });
+    }
 
-
-
-
+    animations()
+} catch (e) { }
 
 
 

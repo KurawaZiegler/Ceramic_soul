@@ -48,6 +48,8 @@
     .works {
         &__wrapper {
             position: relative;
+
+            animation-duration: 1s;
         }
         .swiper-slide img {
             width: 100%;

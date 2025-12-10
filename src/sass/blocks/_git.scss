@@ -100,9 +100,13 @@
             width: 550px;
             height: 341px;
             object-fit: cover;
+
+            // animation-duration: 1s;
         }
         &__form {
             margin-left: 40px;
+
+            // animation-duration: 1s;
         }
         &__input {
             &:hover {
@@ -121,6 +125,8 @@
             right: 24px;
             bottom: 0;
             position: absolute;
+
+            // animation-duration: 1s;
         }
     }
 }
